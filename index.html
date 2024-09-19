@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #414141;
+    }
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+      margin-top: 80px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    #input {
+      height: 50px;
+      width: 300px;
+      border-radius: 5px;
+      padding-left: 42%;
+      font-size: 25px;
+      background-color: #ffffff;
+    }
+    #submit {
+      height: 40px;
+      width: 200px;
+      border: none;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+    }
+
+    #startnewgame {
+      height: 40px;
+      width: 200px;
+      border: none;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+    }
+    .heading {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    h1 {
+      text-decoration: underline;
+      text-align: center;
+      color: aliceblue;
+    }
+
+    .para {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    p {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      color: rgb(159, 140, 126);
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="heading">
+        <h1>Number Guessing Game</h1>
+        <p>Try and Guess number between 1 to 100</p>
+        <p>You have 10 attempts to guess the right number</p>
+      </div>
+      <form class="form">
+        <h1>Guess a Number</h1>
+        <input type="text" id="input" />
+        <button id="submit">Submit Guess</button>
+      </form>
+      <div class="para">
+        <p>Previous Guesses: <span class="guesses"></span></p>
+        <p>Guesses Remaining: <span class="remain">10</span></p>
+        <p class="loworhigh"></p>
+      </div>
+      <div class="newgamebtn">
+        <button id="startnewgame">Start New Game</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
